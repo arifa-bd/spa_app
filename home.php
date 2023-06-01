@@ -10,8 +10,27 @@
    * @return void
   */
  function includes():void{
-  include_once('lib/core-function.php');
-  include_once('lib/coreFunction.php');  
+
+  $directoryList = ["lib"];
+
+  foreach ($directoryList as $directory) {
+
+    $directoryPath = __DIR__ . '/' . $directory;
+
+    $files = scandir($directoryPath);
+   
+    foreach ($files as $file) {
+      if ($file !== '.' && $file !== '..') {
+              $filePath = $directoryPath . '/' . $file;
+
+        if (is_file($filePath) && pathinfo($filePath, PATHINFO_EXTENSION) === 'php') {
+          include_once $filePath;
+        }
+      }
+   }
+
+  }
+
  }
 
  /**
@@ -23,4 +42,5 @@
 
  }
 
+ // call the includes function load all lib files 
 includes();
