@@ -6,27 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Spa application </title>
+    <link rel="stylesheet" href="partial/style.css">
 </head>
 
 <body>
+<?php
+           include('partial/header.php');
+           include('partial/sidebar.php');
+            ?>
+ 
+<table border="0" width="100%" height="600px">
 
-    <table border="0" width="100%" height="600px">
 
-        <tr>
-            <td colspan="2" height="100px">
-                <h1> Single Page Application </h1>
-            </td>
-        </tr>
 
-        <tr>
-            <td width="20%">
-                <ul>
-                    <li><a href="index.php?page=home">Home</a></li>
-                    <li><a href="index.php?page=about">About</a></li>
-                    <li><a href="index.php?page=contact">Contact</a></li>
-                </ul>
-            </td>
-            <td width="80%">
                 <?php
                 if (spaGet('page')) {
                     $page = spaGet('page');
@@ -44,8 +36,7 @@
             </td>
         </tr>
 
-    </table>
-
+    </table>   
 
 </body>
 
