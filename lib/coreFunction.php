@@ -9,6 +9,7 @@ function spaPost($key,$array){
     else{
         return null;
     }
+    
 if(array_key_exists($key,$arrray)){
    
     return $array[$key];

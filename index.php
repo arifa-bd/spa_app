@@ -1,4 +1,5 @@
 <?php 
+include_once "config.php";
 /**
  * This is a home page of our single page application 
  * 
@@ -33,14 +34,8 @@
 
  }
 
- /**
-  * This function loads the controller
-    *@since 1.0.0
-    *@return void
-  */
- function loadController():void{
-
- }
-
  // call the includes function load all lib files 
 includes();
+
+include_once "views/main.php";
+

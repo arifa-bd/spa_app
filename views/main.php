@@ -6,37 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Spa application </title>
-    <link rel="stylesheet" href="partial/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.css">
 </head>
 
 <body>
-<?php
-           include('partial/header.php');
-           include('partial/sidebar.php');
-            ?>
- 
-<table border="0" width="100%" height="600px">
 
 
+    <table border="0" width="100%" height="600px">
 
-                <?php
-                if (spaGet('page')) {
-                    $page = spaGet('page');
-                    include_once "views/$page.php";
-                } else {
-                    include_once "views/home.php";
-                }
-                ?>
+        <tr>
+            <td colspan="2" height="100px">
+                <h1>SPA Application</h1>
             </td>
         </tr>
 
         <tr>
+            <td width="20%">
+                <?php loadView('partial/sidebar'); ?>
+            </td>
+            <td width="80%">
+                <?php loadController(); ?>
+            </td>
+
+        <tr>
             <td colspan="2" height="100px">
-                &copy; 2023 Kauniaweb
+                <?php loadView('partial/footer'); ?>
             </td>
         </tr>
 
-    </table>   
+    </table>
 
 </body>
 
