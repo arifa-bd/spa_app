@@ -11,15 +11,18 @@
 
 <body>
 
+<table border="0" width="100%" height="600px">
 
-    <table border="0" width="100%" height="600px">
-
-        <tr>
-            <td colspan="2" height="100px">
-                <h1>SPA Application</h1>
-            </td>
-        </tr>
-
+<tr>
+    <td colspan="2" height="100 px">
+    <h4 class="logo">SPA APPLICATION</h4>
+    </td>
+</tr>
+   
+<tr>
+    <td>
+    <?php loadView('partial/header'); ?>   
+</td>
         <tr>
             <td width="20%">
                 <?php loadView('partial/sidebar'); ?>

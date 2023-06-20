@@ -7,7 +7,7 @@
  *  @return bool|string
  */
 
-function spaGet($key,$array = false):bool|string {
+function spaGet($key,$array = false){
 
     // check if the key is set
       if(!$key){
@@ -33,7 +33,7 @@ function spaGet($key,$array = false):bool|string {
  *@since 1.0.0
  *@return void
  */
-function loadController(): void
+function loadController()
 {
      $page = spaGet('page');
      $page = $page ? $page : 'main';

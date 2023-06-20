@@ -6,11 +6,11 @@
 </head>
 <body>
 <nav>
-    <img class="logo" src="images.jpg">  
+
   </nav>
-  
-  
-  
+  <div>
+
+</div>
   
 </body>
 </html>
