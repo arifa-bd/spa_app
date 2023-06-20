@@ -1,16 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="style.css">
- 
-</head>
-<body>
-<nav>
-
-  </nav>
-  <div>
-
-</div>
-  
-</body>
-</html>
+<h1>Spa application </h1>
