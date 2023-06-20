@@ -14,7 +14,7 @@
 <table border="0" width="100%" height="600px">
 
 <tr>
-    <td colspan="2" height="100 px">
+    <td colspan="2" height="200 px">
     <h4 class="logo">SPA APPLICATION</h4>
     </td>
 </tr>

@@ -44,6 +44,10 @@ a:hover {
 footer {
   text-align: center;
   padding: 3px;
-  background-color: DarkSalmon;
-  color: white;
+  height:60px;
+  background-color:whitesmoke;
+  color: black;
+  position: fixed;
+  width: 100%; 
+    
 }
