@@ -23,7 +23,7 @@
                 <?php loadView('partial/sidebar'); ?>
             </td>
             <td width="80%">
-                <?php loadController(); ?>
+            <?php loadController(); ?>
             </td>
 
         <tr>

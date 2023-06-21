@@ -12,4 +12,8 @@ class pageController
     {
         loadView('model.view/page/newpage');
     }
+    public function pages()
+    {
+        loadView('model.view/page/addpage');
+    }
 }

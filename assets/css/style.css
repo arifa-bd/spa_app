@@ -10,9 +10,7 @@ nav{
     align-items: center;
   }
 
-.container {
-    
-  }
+
   
 aside {
     height:85vh;
@@ -45,7 +43,7 @@ footer {
   text-align: center;
   padding: 3px;
   height:60px;
-  background-color:whitesmoke;
+  background-color:red;
   color: black;
   position: fixed;
   width: 100%; 
